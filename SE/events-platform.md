@@ -1,48 +1,52 @@
-1. Context (real or imagined business situation)
+# Events Platform
 
-A small community business has reached out to you to create a platform where they can share events with members of the community. The staff at the business want an elegant way of creating and sharing these events via social media. A member of the community can add the event they signed up for to their personal calendar. Some of these events are offered for free, however others are paid for either with a set amount or a pay as you feel charge.  
+## Context (real or imagined business situation)
 
-2. High-level desired outcome
+A small community business has reached out to you to create a platform where they can create and share events with members of the community. A member of the community can add the event they signed up for to their personal calendar. Some of these events are offered for free, however others are paid for either with a set amount or a pay as you feel charge.  
 
-A platform where a business can share their events with members of the community, and community members can sign up and optionally pay to participate in an event. This can be a website or a mobile app, or both depending on the time you have available. 
+## Assumptions and prerequisites 
 
-3. Minimum viable product
+1. You will be using a freely available API to bring in product data for the platform you will be creating. You may need to come up with some data yourself, such as the events and their timings, but this is not the focus of the project. The API you will use is for you to research and decide on prior to starting the project.
+2. You will need to sign up for services, such as Google Calendar API, on a free, developer account.
+
+## High-level desired outcome
+
+A platform where a business can share their events with members of the community, and community members can sign up and optionally pay to participate in the events. This can be a website or a mobile app, or both depending on the time you have available. 
+
+## Minimum viable product
 
 A mobile app or a website which allows:
-- creating events by staff
-- signing up to events by non-staff
-- adding events to Google calendar
+1. Creating events by staff
+2. Signing up to events by non-staff
+3. Being able to add events to a Google calendar, if one has signed up for it
 
-5. Possible extensions
+## Non functional requirements 
 
-- social media integration
-- payment platform integration
-- both a website and a mobile app
-- logging in using a Google account, or other social media
-- confirmation emails when booked in for an event
-
-6. Non functional requirements 
-
-- Built in React or React Native. 
+- Built in React or React Native using JavaScript or TypeScript. 
 - Responsive design.
 - Accessibility taken into account.
 - Considerations taken for the security of users log in and payment information.
 
-7. Performance criteria
+## Performance criteria
 
 The app should clearly communicate errors to users, if they occur, or if content is still loading. The design should be clear and obvious as to how an event can be created or signed up for. 
 
-8. Non-binding tech suggestions
+## Non-binding tech suggestions
 
-Consider using: 
 - Free API to give your events platform a theme (plants, books, films, animals, running, coffees, etc.)
-- React 
-- React Native
+- React or React Native
 - TypeScript
 - Google API
 - Stripe, Google pay, or another payments portal with a free tier
 
+## Possible extensions
 
-9. Due date
+- payment platform integration
+- sending out confirmation emails when booked in for an event
+- social media integration
+- both a website and a mobile app
+- logging in using a Google account, or other social media
 
-5 working days from the start date, spread over 5 weeks. 
+## Due date
+
+To be advised, but not later than six weeks from commencement.
