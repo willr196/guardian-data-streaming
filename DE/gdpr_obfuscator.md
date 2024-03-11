@@ -9,18 +9,18 @@ information that can be used to identify an individual should be anonymised.
 
 
 ## Assumptions and Prerequisites
-1. Data is stored in S3
-2. Data is stored in CSV, JSON or parquet format.
-3. Fields containing GDPR-sensitive data are known and will be supplied in advance.
-4. S3 buckets for the output data are assumed to exist already.
-5. Data records will be supplied with a primary key
+1. Data is stored in CSV, JSON, or parquet format in S3.
+2. Fields containing GDPR-sensitive data are known and will be supplied in advance.
+3. Data records will be supplied with a primary key
 
 ## High-level desired outcome
+You are required to provide an obfuscation tool that can be integrated as a library module into a Python codebase.
+
 The tool will be supplied with the S3 location of a file containing sensitive information, and
-the names of the affected fields. It will create a new file containing an exact copy of the input file
-but with the sensitive data replaced with obfuscated strings. The new file will be stored in a bucket 
-that is available for data analysts to access. Additionally, a file recording what replacements have 
-been made will be stored in a secure bucket accessible only to the Data Protection Officer and system administrators.
+the names of the affected fields. It will create a new file or byte stream object containing an 
+exact copy of the input file
+but with the sensitive data replaced with obfuscated strings. The calling procedure will handle saving the 
+output to its destination. 
 It is expected that the tool will be deployed within the AWS account.
 
 ## Minimum viable product
@@ -29,20 +29,17 @@ In the first instance, it is only necessary to be able to process CSV data.
 The tool will be invoked by sending a JSON string containing:
 - the S3 location of the required CSV file for obfuscation
 - the names of the fields that are required to be obfuscated
-- the S3 output location for the obfuscated file
-- the S3 output location for the obfuscated record
+
 
 For example, the input might be:
 ```json
 {
     "file_to_obfuscate": "s3://my_ingestion_bucket/new_data/file1.csv",
-    "pii_fields": ["name", "email_address"],
-    "obfuscated_output_location": "s3://data_analysis_bucket/new_data/file1_obf.csv",
-    "obfuscation_record_location": "s3://gdpr_records_bucket/new_data/file1_records.csv"
+    "pii_fields": ["name", "email_address"]
 }
 ```
 
-The CSV file might look like this:
+The input CSV file might look like this:
 ```csv
 student_id,name,course,cohort,graduation_date,email_address
 ...
@@ -50,7 +47,7 @@ student_id,name,course,cohort,graduation_date,email_address
 ...
 ```
 
-The obfuscated file will look like this:
+The output will be a bytestream representation of a file like this:
 ```csv
 student_id,name,course,cohort,graduation_date,email_address
 ...
@@ -58,15 +55,9 @@ student_id,name,course,cohort,graduation_date,email_address
 ...
 ```
 
-The record file will look like this:
-```csv
-student_id,name,email address
-...
-1234,'John Smith','j.smith@email.com'
-...
-```
+The output format should provide content compatible with the `boto3` [S3 Put Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/put_object.html) function.
 
-Invocation is likely to be via a tool such as EventBridge, Step Functions or Airflow. The invocation mechanism
+Invocation is likely to be via a tool such as EventBridge, Step Functions, or Airflow. The invocation mechanism
 is not a required element of this project.
 
 
@@ -77,7 +68,8 @@ The MVP could be extended to allow for other file formats, primarily JSON and Pa
 - The tool should be written in Python, be unit tested, PEP-8 compliant, and tested for security vulnerabilities
 - The code should include documentation strings
 - No credentials are to be recorded in the code.
-- Required infrastructure should be defined in code.
+- The complete size of the module should not exceed [the memory limits for Python Lambda dependencies](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html)
+
 
 ## Performance criteria
 - The tool should be able to handle files of up to 1MB with a runtime of less than 1 minute
@@ -86,7 +78,7 @@ The MVP could be extended to allow for other file formats, primarily JSON and Pa
 It is expected that the code will use the AWS SDK for Python (boto3). Code may be tested with any standard tool
 such as Pytest, Unittest, or Nose.
 
-Deployment should be on a platform within the AWS ecosystem, such as EC2, ECS or Lambda.
+The library should be suitable for deployment on a platform within the AWS ecosystem, such as EC2, ECS, or Lambda.
 
 
 ## Due date
