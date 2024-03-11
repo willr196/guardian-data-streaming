@@ -11,7 +11,7 @@ information that can be used to identify an individual should be anonymised.
 ## Assumptions and Prerequisites
 1. Data is stored in CSV, JSON, or parquet format in S3.
 2. Fields containing GDPR-sensitive data are known and will be supplied in advance.
-3. Data records will be supplied with a primary key
+3. Data records will be supplied with a primary key.
 
 ## High-level desired outcome
 You are required to provide an obfuscation tool that can be integrated as a library module into a Python codebase.
@@ -61,18 +61,21 @@ Invocation is likely to be via a tool such as EventBridge, Step Functions, or Ai
 is not a required element of this project.
 
 
-## Possible extensions
-The MVP could be extended to allow for other file formats, primarily JSON and Parquet. The output file formats should be the same as the input formats.
 
 ## Non-functional requirements
-- The tool should be written in Python, be unit tested, PEP-8 compliant, and tested for security vulnerabilities
-- The code should include documentation strings
+- The tool should be written in Python, be unit tested, PEP-8 compliant, and tested for security vulnerabilities.
+- The code should include documentation.
 - No credentials are to be recorded in the code.
 - The complete size of the module should not exceed [the memory limits for Python Lambda dependencies](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html)
 
 
 ## Performance criteria
 - The tool should be able to handle files of up to 1MB with a runtime of less than 1 minute
+
+
+## Possible extensions
+The MVP could be extended to allow for other file formats, primarily JSON and Parquet. The output file formats should be the same as the input formats.
+
 
 ## Non-binding tech suggestions
 It is expected that the code will use the AWS SDK for Python (boto3). Code may be tested with any standard tool
