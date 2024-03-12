@@ -15,14 +15,21 @@ Users of the platform can enter key terms or choose from presets which will prov
 
 ## Minimum viable product
 
-Either a website or mobile app where a user can provide some search criteria to filter and sort artworks. The artworks can then be saved into a temporary collection, which can be viewed and expanded. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition. The user can select which artworks they want to include in an exhibition they are creating which persists for the duration of their session.
+A website or a web progressive app (WAP) where:
+
+1. a user can provide some search criteria to filter and sort artworks. 
+2. the artworks can then be saved into a temporary collection, which can be viewed and expanded. 
+3. images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition. 
+4. he user can select which artworks they want to include in an exhibition they are creating which persists for the duration of their session.
 
 ## Non functional requirement
 
-- Built in React or React Native using JavaScript or TypeScript. 
+- Built using JavaScript or TypeScript. 
 - Responsive design.
 - Accessibility taken into consideration.
 - Fast loading of high quality media content, or indication of loading times to the user. 
+- Hosted on a free distribution platform.
+- The code should include documentation including details on where the project is hosted and how it can be ran locally.
 
 ## Performance criteria
 

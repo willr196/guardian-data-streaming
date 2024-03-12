@@ -16,16 +16,19 @@ A platform where a business can share their events with members of the community
 ## Minimum viable product
 
 A mobile app or a website which allows:
-1. Creating events by staff
-2. Signing up to events by non-staff
-3. Being able to add events to a Google calendar, if one has signed up for it
+
+1. creating events by staff.
+2. signing up to events by non-staff.
+3. being able to add events to a Google calendar, if one has signed up for it.
 
 ## Non functional requirements 
 
-- Built in React or React Native using JavaScript or TypeScript. 
+- Built JavaScript or TypeScript. 
 - Responsive design.
 - Accessibility taken into account.
 - Considerations taken for the security of users log in and payment information.
+- Hosted on a free distribution platform.
+- The code should include documentation including details on where the project is hosted and how it can be ran locally.
 
 ## Performance criteria
 
