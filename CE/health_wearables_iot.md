@@ -37,5 +37,5 @@ Your project should encompass an IoT platform featuring:
 - Implementation of health check mechanisms to assess the operational status of connected health wearables and alerts for unhealthy devices, enhancing overall system reliability.
 - Creation of Helm Charts for easy deployment of the service and components to a Kubernetes Cluster if desired.
 
-## Due Date
+## Due Date
 To be advised, but not later than six weeks from commencement.
