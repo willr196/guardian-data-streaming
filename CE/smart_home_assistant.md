@@ -39,5 +39,5 @@ Your project should consist of an HTTP server with the following features:
 - Creation of Helm Charts for easy deployment of the service and components to a Kubernetes Cluster if desired.
 - Implementation of health check mechanisms to monitor the status of external components and ensure system reliability.
 
-## Due Date
+## Due Date
 To be advised, but not later than six weeks from commencement.
