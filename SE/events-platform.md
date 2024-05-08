@@ -23,12 +23,12 @@ A mobile app or a website which allows:
 
 ## Non functional requirements 
 
-- Built JavaScript or TypeScript. 
+- Built in JavaScript or TypeScript. 
 - Responsive design.
 - Accessibility taken into account.
 - Considerations taken for the security of users log in and payment information.
 - Hosted on a free distribution platform.
-- The code should include documentation including details on where the project is hosted and how it can be ran locally.
+- The code should include clear and detailed documentation, which includes details on where the project is hosted and explicit steps on how it can be ran locally.
 
 ## Performance criteria
 
@@ -52,4 +52,4 @@ The app should clearly communicate errors to users, if they occur, or if content
 
 ## Due date
 
-To be advised, but not later than six weeks from commencement.
+To be advised, but not later than six weeks from commencement. Please note that you must host this project, and that you must provide clear documentation on how the project can be ran locally. Ommitting these two steps can result in this project being unsuccessful. 
