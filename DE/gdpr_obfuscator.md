@@ -9,7 +9,7 @@ information that can be used to identify an individual should be anonymised.
 
 
 ## Assumptions and Prerequisites
-1. Data is stored in CSV, JSON, or parquet format in S3.
+1. Data is stored in CSV-, JSON-, or parquet-formatted files in an AWS S3 bucket.
 2. Fields containing GDPR-sensitive data are known and will be supplied in advance.
 3. Data records will be supplied with a primary key.
 
@@ -17,7 +17,7 @@ information that can be used to identify an individual should be anonymised.
 You are required to provide an obfuscation tool that can be integrated as a library module into a Python codebase.
 
 The tool will be supplied with the S3 location of a file containing sensitive information, and
-the names of the affected fields. It will create a new file or byte stream object containing an 
+the names of the affected fields. It will create a new file or byte-stream object containing an 
 exact copy of the input file
 but with the sensitive data replaced with obfuscated strings. The calling procedure will handle saving the 
 output to its destination. 
@@ -39,7 +39,7 @@ For example, the input might be:
 }
 ```
 
-The input CSV file might look like this:
+The target CSV file might look like this:
 ```csv
 student_id,name,course,cohort,graduation_date,email_address
 ...
@@ -47,7 +47,7 @@ student_id,name,course,cohort,graduation_date,email_address
 ...
 ```
 
-The output will be a bytestream representation of a file like this:
+The output will be a byte-stream representation of a file like this:
 ```csv
 student_id,name,course,cohort,graduation_date,email_address
 ...
@@ -83,6 +83,9 @@ such as Pytest, Unittest, or Nose.
 
 The library should be suitable for deployment on a platform within the AWS ecosystem, such as EC2, ECS, or Lambda.
 
+Although the finished product is intended to be used as a library function invoked by other code, you may
+want to be able to demonstrate its use by invoking it from the command line.
+
 
 ## Due date
-To be advised, but not later than six weeks from commencement.
+To be advised, but not later than four weeks from commencement.
