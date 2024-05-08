@@ -51,4 +51,4 @@ The app should clearly communicate to users errors, if they occur, or if content
 
 ## Due date
 
-To be advised, but not later than six weeks from commencement. Please note that you must host this project, and that you must provide clear documentation on how the project can be ran locally. Ommitting these two steps can result in this project being unsuccessful. 
+To be advised, but not later than six weeks from commencement. Please note that you must host this project, and that you must provide clear documentation on how the project can be ran locally. Omitting these two steps can result in this project being unsuccessful. 
