@@ -38,7 +38,7 @@ These fields are the minimum required. Others may be added at your discretion.
 
 
 ## Non-functional requirements
-- The tool should be written in Python, be unit tested, PEP-8 compliant, and tested for security vulnerabilities.
+- The tool should be written in Python, be unit-tested, PEP-8 compliant, and tested for security vulnerabilities.
 - The code should include documentation.
 - No credentials are to be recorded in the code.
 - The complete size of the module should not exceed [the memory limits for Python Lambda dependencies](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html)
@@ -57,9 +57,9 @@ message that displays the first few lines of the article content, perhaps the fi
 
 
 ## Non-binding tech suggestions
-It is expected that the message broker employed will be AWS Kinesis. If you choose
-to use an alternative such as Kafka or RabbitMQ, it will have to be accommodated 
-within the AWS Free Tier.
+It is expected that the message broker employed will be AWS SQS. If you choose
+to use an alternative such as Kafka or RabbitMQ, it would have to be accommodated 
+within the AWS Free Tier. AWS Kinesis is a possibility but there would likely be a small cost.
 
 This application is intended to be deployed as a component in a data platform. However, for
 demonstration purposes, you may want to be able to invoke it from your local command line.
