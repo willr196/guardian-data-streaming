@@ -21,6 +21,8 @@ A mobile app or a website which allows:
 2. signing up to events by non-staff.
 3. being able to add events to a Google calendar, if one has signed up for it.
 
+Consider how you will accomplish the differentiation between staff and users. You will likely need a way to log in as either staff or a user, in which case you _must_ provide both a test staff account and a test user account for us to review your work, as well as for further hiring partners. Please include this in your README. Failing to do so may result in us being unable to review your work.
+
 ## Non functional requirements 
 
 - Built in JavaScript or TypeScript. 
@@ -50,6 +52,11 @@ The app should clearly communicate errors to users, if they occur, or if content
 - both a website and a mobile app
 - logging in using a Google account, or other social media
 
-## Due date
+## Due date and completion considerations
 
-To be advised, but not later than four weeks from commencement. Please note that you must host this project, and that you must provide clear documentation on how the project can be ran locally. Omitting these two steps can result in this project being unsuccessful. 
+The due date is to be advised, but not later than four weeks from commencement. Please note that the following are non negotiable for the fulfillment of the project:  
+- you must host a project which covers the MVP;
+- you must provide clear documentation summarising the project and explaining how the project can be ran locally;
+- you must provide test staff and user accounts for us to review your work.
+
+Omitting these requirements can result in this project being unsuccessful. 
