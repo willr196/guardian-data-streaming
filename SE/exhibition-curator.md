@@ -17,10 +17,10 @@ Users of the platform can enter key terms or choose from presets which will prov
 
 A website or a web progressive app (WAP) where:
 
-1. a user can provide some search criteria to filter and sort artworks. 
-2. the artworks can then be saved into a temporary collection, which can be viewed and expanded. 
-3. images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition. 
-4. the user can select which artworks they want to include in an exhibition they are creating which persists for the duration of their session.
+1. A user can provide some search criteria to filter and sort artworks. 
+2. The artworks can then be saved into a temporary collection, which can be viewed and expanded. 
+3. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition. 
+4. The user can select which artworks they want to include in an exhibition they are creating which persists for the duration of their session.
 
 ## Non functional requirement
 
@@ -43,12 +43,17 @@ The app should clearly communicate to users errors, if they occur, or if content
 
 4. Possible extensions
 
-- permanence of exhibitions through a user profile and a non-relational BE to save favourite search combinations
+- permanence of exhibitions through a user profile and a non-relational BE to save favourite search combinations. Consider how users can log in, and the safety of their details, and make sure to share a whitelisted test account for us to review your work
 - unique shareable links 
 - both a website and a mobile app
 - social media integration
 - multiple search and filter criteria 
 
-## Due date
+## Due date and completion considerations
 
-To be advised, but not later than four weeks from commencement. Please note that you must host this project, and that you must provide clear documentation on how the project can be ran locally. Omitting these two steps can result in this project being unsuccessful. 
+The due date is to be advised, but not later than four weeks from commencement. Please note that the following are non negotiable for the fulfillment of the project:  
+- you must host a project which covers the MVP;
+- you must provide clear documentation summarising the project and explaining how the project can be ran locally;
+- if you have log in functionality, you must provide a whitelisted test user accounts for us to review your work.
+
+Omitting these requirements can result in this project being unsuccessful. 
