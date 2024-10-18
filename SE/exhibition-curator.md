@@ -11,16 +11,21 @@ You have always dreamt of being a curator of antiquities and fine artworks, and 
 
 ## High-level desired outcome
 
-Users of the platform can enter key terms or choose from presets which will provide them with a list of artworks to select from. The selected artworks will then be added to a personalised exhibition. When viewed, the exhibition should include images and information associated each curated them. Users can navigate between different artworks, and should be provided with links where they can find out more information, and where they can see the artwork in person. 
+- Users of the platform can view artworks from the APIs you have decided upon. 
+- Users can search all of the APIs you are working with using a search functionality.
+- Users can select artowrks to add to a personal collection.
+- Each artwork can be viewed separately, where further details for it can be seen - including any images and information associated with curated the artwork.
+- Users can navigate between different artworks, and should be provided with links where they can find out more information, and where they can see the artwork in person. 
 
 ## Minimum viable product
 
 A website or a web progressive app (WAP) where:
 
-1. A user can provide some search criteria to filter and sort artworks. 
-2. The artworks can then be saved into a temporary collection, which can be viewed and expanded. 
-3. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition. 
-4. The user can select which artworks they want to include in an exhibition they are creating which persists for the duration of their session.
+1. A user can provide some search criteria to filter and sort artworks. If no search criteria are provided, the user can see a list of artworks filtered or sorted in a way that is up to you.
+2. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition.
+3. Artworks can be browsed one by one using "Previous" / "Next" type of functionality, or from a list.
+4. The artworks can then be saved into a temporary collection, which can be viewed and expanded.
+5. Artworks in the 
 
 ## Non functional requirement
 
@@ -30,6 +35,8 @@ A website or a web progressive app (WAP) where:
 - Fast loading of high quality media content, or indication of loading times to the user. 
 - Hosted on a free distribution platform.
 - The code should include clear and detailed documentation, which includes details on where the project is hosted and explicit steps on how it can be ran locally.
+- For mobile applications, you can host the app on ExpoDev, whch will generate a QR code and a URL so that your project can be accessed via the ExpoDev app.
+- For both mobile and web project, consider recording a video of you navigating through the app, sharing it on a free distribution platform and including a link in your README. This can be especially beneficial for a project. 
 
 ## Performance criteria
 
@@ -54,6 +61,6 @@ The app should clearly communicate to users errors, if they occur, or if content
 The due date is to be advised, but not later than four weeks from commencement. Please note that the following are non negotiable for the fulfillment of the project:  
 - you must host a project which covers the MVP;
 - you must provide clear documentation summarising the project and explaining how the project can be ran locally;
-- if you have log in functionality, you must provide a whitelisted test user accounts for us to review your work.
+- if you have log in functionality, you must provide a whitelisted test user accounts for us to review your work. You must include these in the README as well for hiring partners and potential employers to be able to access.
 
 Omitting these requirements can result in this project being unsuccessful. 
