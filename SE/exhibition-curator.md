@@ -25,7 +25,7 @@ A website or a web progressive app (WAP) where:
 2. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition.
 3. Artworks can be browsed one by one using "Previous" / "Next" type of functionality, or from a list.
 4. The artworks can then be saved into a temporary collection, which can be viewed and expanded.
-5. Artworks in the 
+5. Artworks in the temporary exhbition can be removed from it.
 
 ## Non functional requirement
 
