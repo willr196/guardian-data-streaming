@@ -1,65 +1,67 @@
 # Events Platform
 
-## Context (real or imagined business situation)
+## Project Overview
 
-A small community business has reached out to you to create a platform where they can create and share events with members of the community. A member of the community can add the event they signed up for to their personal calendar. Some of these events are offered for free, however others are paid for either with a set amount or a pay as you feel charge.  
+A small community business has reached out to you to create a platform where they can create and share events with members of the community.
 
-## Assumptions and prerequisites 
+You have been taked with building and hosting a platform (either a website or a mobile app) that allows community members to view, sign up for, and add events to their own personal calendars. Staff members should have additional functionality to create and manage events.
 
-1. You can use a freely available API to bring in product data for the platform you will be creating, or you can come up with some data yourself (such as the events and their timings) but generating data is not the focus of the project. Either way, it is for you to research and decide on prior to starting the project whether and which API you will use.
-2. You will need to sign up for services, such as Google Calendar API, on a free, developer account.
+## Minimum Viable Product (MVP)
 
-## High-level desired outcome
+Your platform must fulfill the following functionality:
 
-A platform where a business can share their events with members of the community, and community members can sign up for the events and add them to their calendar. This project can be a website or a mobile app, either needs to be readily viewable as hosted project. Please see further below for some suggestions around the hosting of a mobile app. 
+1. Display a list of events for users to browse.
+2. Allow users to sign up for an event.
+3. Allow users to add events to their Google Calendar after signing up.
+4. Enable staff members to sign-in to create and manage events.
 
-## Minimum viable product
+See [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
 
-A mobile app or a website which allows:
+## Tech Choices:
 
-1. Lists events for users
-2. Users can sign up to an event
-3. Users can add an event they have signed up for to their Google Calendar
-4. Staff can do the above, as well as create an event
+- The platform should be built using **JavaScript** or **TypeScript**.
+- **Event Data**: You can use either a freely available API for event data or create your own event data. Research and decide on which API to use prior to starting. The focus is on building the platform, not on data generation.
+- **Calendar API**: You'll need to sign up for the Google Calendar API (or an equivalent) using a free developer account. This will allow users to add events to their calendars.
+- Implement security best practices for **user authentication**
+- Host the project on a **free platform** (e.g., GitHub Pages for web, Expo for mobile apps).
 
-Consider how you will accomplish the differentiation between staff and users. You will likely need a way to log in as either staff or a user, in which case you _must_ provide both a test staff account and a test user account for us to review your work, as well as for further hiring partners. Please include this in your README. Failing to do so may result in us being unable to review your work.
+The following technologies and tools are **suggestions**, not requirements:
 
-## Non functional requirements 
+- **React** or **React Native** for the frontend.
+- **TypeScript** for a new challenge.
+- **Google Calendar API** for calendar integration.
+- **ExpoDev** for hosting a mobile React Native apps - This platform will provide a QR code and URL so your project can be accessed via the ExpoDev app.
 
-- Built in JavaScript or TypeScript. 
-- Responsive design.
-- Accessibility taken into account.
-- Considerations taken for the security of users log in and payment information.
-- Hosted on a free distribution platform.
-- The code should include clear and detailed documentation, which includes details on where the project is hosted and explicit steps on how it can be ran locally.
-- For mobile applications, you can host the app on ExpoDev, whch will generate a QR code and a URL so that your project can be accessed via the ExpoDev app.
-- For both mobile and web project, consider recording a video of you navigating through the app, sharing it on a free distribution platform and including a link in your README. This can be especially beneficial for a project. 
+## UI Requirements
 
-## Performance criteria
+- Ensure the design is **responsive** and works well across different screen sizes.
+- **Accessibility** must be considered for users with disabilities (e.g., screen readers, keyboard navigation).
+- The platform should clearly communicate **errors** to the users (e.g., failed requests, missing fields).
+- Loading states should be obvious when content is being fetched.
+- The user interface should be intuitive, making it easy to find, sign up for, and create events.
 
-The app should clearly communicate errors to users, if they occur, or if content is still loading. The design should be clear and obvious as to how an event can be created or signed up for. 
+## Completion and Submission Requirements
 
-## Non-binding tech suggestions
+The due date will be advised, but it will be no later than four weeks after the project commencement.
 
-- Free API to give your events platform a theme (plants, books, films, animals, running, coffees, etc.)
-- React or React Native
-- TypeScript
-- Google API
-- Stripe, Google pay, or another payments portal with a free tier
+Your project must meet the following criteria to be considered complete:
 
-## Possible extensions
+1. The project must be **hosted** and publicly accessible (web or mobile).
+2. The README must include:
+   - A summary of the project
+     - you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.
+   - Test account access details
+   - Clear instructions on how to run the project locally, including any setup steps (e.g., installing dependencies, setting up environment variables).
+3. Meet the [MVP requirements](#minimum-viable-product-mvp) outlined above.
 
-- Payment platform integration (developer tier)
-- Sending out confirmation emails when booked in for an event
-- Social media integration
-- Both a website and a mobile app
-- Logging in using a Google account, or other social media
+Failure to do this may result in the project being rejected.
 
-## Due date and completion considerations
+## _Optional_ Extensions
 
-The due date is to be advised, but not later than four weeks from commencement. Please note that the following are non negotiable for the fulfillment of the project:  
-- you must host a project which covers the MVP;
-- you must provide clear documentation summarising the project and explaining how the project can be ran locally;
-- you must provide test staff and user accounts for us to review your work, and include them on your README.
+If you have time once you have completed the MVP requirements, consider adding the following features:
 
-Omitting these requirements can result in this project being unsuccessful. 
+1. **Payment platform integration**: Implement payments via Stripe, Google Pay, etc.
+2. **Confirmation emails**: Automatically send confirmation emails to users who sign up for an event.
+3. **Social media integration**: Allow users to share events on social platforms.
+4. **Cross-platform**: Build both a website and a mobile app.
+5. **Google/Social login**: Allow users to sign up using their Google or social media accounts.
