@@ -8,11 +8,12 @@ You’ve been invited by a coalition of museums and universities to develop a pl
 
 The platform (web app or progressive web app) must include the following features:
 
-1. Users can search for artworks across collections from **at least two** different Museum or University APIs.
-2. Allow users to browse artworks, from a list view, with "Previous" and "Next" navigation options.
-3. Display images and essential details about each artwork individually.
-4. Enable users to add items to and remove items from temporary exhibitions of saved artworks.
-5. Users can view their exhibitions and the saved items within each collection.
+1. Users can search artworks across collections from **at least two** different Museum or University APIs.
+2. Allow users to browse artworks, from a list view, with "Previous" and "Next" page navigation options to prevent loading of too many items at once.
+3. Users can filter and/or sort artworks to make it easier to navigate through larger lists of items.
+4. Display images and essential details about each artwork individually.
+5. Enable users to add items to and remove items from temporary exhibitions of saved artworks.
+6. Users can view their exhibitions and the saved items within each collection.
 
 Refer to [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
 
