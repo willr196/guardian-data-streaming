@@ -1,66 +1,62 @@
-# Exhibition Curator
+# Exhibition Curation Platform
 
-## Context (real or imagined business situation)
+## Project Overview
 
-You have always dreamt of being a curator of antiquities and fine artworks, and now you have been approached by a coalition of museums and universities, who want to create viewer driven virtual exhibitions from their combined catalogues. This will be of great use to researchers, students, and art lovers alike. 
+You’ve been invited by a coalition of museums and universities to develop a platform where users can explore virtual exhibitions from combined collections of antiquities and fine art. This platform will serve researchers, students, and art enthusiasts, providing a searchable and interactive experience of the collections.
 
-## Assumptions and Prerequisites
+## Minimum Viable Product (MVP)
 
-1. You will use at least two separate Museum or University free APIs to request information about their collections. It is for you to research which APIs you will use in advance of starting this project.
-2. You may need to sign up for additional services, please ensure you are using free, developer tiers of any services you sign up for. 
+The platform (web app or progressive web app) must include the following features:
 
-## High-level desired outcome
+1. Users can search for artworks across collections from **at least two** different Museum or University APIs.
+2. Allow users to browse artworks, from a list view, with "Previous" and "Next" navigation options.
+3. Display images and essential details about each artwork individually.
+4. Enable users to add items to and remove items from temporary exhibitions of saved artworks.
+5. Users can view their exhibitions and the saved items within each collection.
 
-- Users of the platform can view artworks from the APIs you have decided upon. 
-- Users can search all of the APIs you are working with using a search functionality.
-- Users can select artowrks to add to a personal collection.
-- Each artwork can be viewed separately, where further details for it can be seen - including any images and information associated with curated the artwork.
-- Users can navigate between different artworks, and should be provided with links where they can find out more information, and where they can see the artwork in person. 
+Refer to [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
 
-## Minimum viable product
+## Tech Choices
 
-A website or a web progressive app (WAP) where:
+- **Programming Languages**: Use **JavaScript** or **TypeScript**.
+- **API Integration**: Research and choose at least two free museum or university APIs to retrieve collection data. Be sure to sign up for any necessary developer accounts on free tiers.
+- **Hosting**: Use a free distribution platform (e.g., GitHub Pages for web, Expo for mobile apps).
+- Implement **security best practices** (e.g. for storage of API keys).
 
-1. A user can provide some search criteria to filter and sort artworks. If no search criteria are provided, the user can see a list of artworks filtered or sorted in a way that is up to you.
-2. Images and core information about the artwork are displayed when a user interacts with a thumbnail or other indicator of an artwork from the exhibition.
-3. Artworks can be browsed one by one using "Previous" / "Next" type of functionality, or from a list.
-4. The artworks can then be saved into a temporary collection, which can be viewed and expanded.
-5. Artworks in the temporary exhbition can be removed from it.
+The following technologies and tools are **suggestions**, not requirements:
 
-## Non functional requirement
+- **React** or **React Native** for the frontend.
+- **TypeScript** for a new challenge.
+- **Google Calendar API** for calendar integration.
+- **ExpoDev** for hosting a mobile React Native apps - This platform will provide a QR code and URL so your project can be accessed via the ExpoDev app.
 
-- Built using JavaScript or TypeScript. 
-- Responsive design.
-- Accessibility taken into consideration.
-- Fast loading of high quality media content, or indication of loading times to the user. 
-- Hosted on a free distribution platform.
-- The code should include clear and detailed documentation, which includes details on where the project is hosted and explicit steps on how it can be ran locally.
-- For mobile applications, you can host the app on ExpoDev, whch will generate a QR code and a URL so that your project can be accessed via the ExpoDev app.
-- For both mobile and web project, consider recording a video of you navigating through the app, sharing it on a free distribution platform and including a link in your README. This can be especially beneficial for a project. 
+## UI Requirements
 
-## Performance criteria
+- Design should be **responsive** and adapt well across various screen sizes.
+- Ensure **accessibility** for users with disabilities (e.g., support screen readers, keyboard navigation).
+- The UI should clearly display **errors** (e.g., failed requests or missing fields) and show loading states when content is being fetched.
+- Design should intuitively guide users to search, view, and create curated exhibitions.
 
-The app should clearly communicate to users errors, if they occur, or if content is still loading. The design should be clear and obvious as to how to create a curated exhibition and how to view it.  
+## Completion and Submission Requirements
 
-## Non-binding tech suggestions
+The due date will be provided, but it will be no later than four weeks after starting the project.
 
-- React 
-- React Native
-- TypeScript
+Your project must fulfill the following criteria:
 
-4. Possible extensions
+1. The project should be **hosted** and publicly accessible (web or mobile).
+2. **README Documentation** should include:
+   - A summary of the project
+     - (you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.)
+   - Clear instructions on how to run the project locally, including setup steps (e.g., installing dependencies and configuring environment variables).
+3. Meet the [MVP requirements](#minimum-viable-product-mvp) outlined above.
 
-- permanence of exhibitions through a user profile and a non-relational BE to save favourite search combinations. Consider how users can log in, and the safety of their details, and make sure to share a whitelisted test account for us to review your work
-- unique shareable links 
-- both a website and a mobile app
-- social media integration
-- multiple search and filter criteria 
+Failure to meet these requirements may result in project rejection.
 
-## Due date and completion considerations
+## Optional Extensions
 
-The due date is to be advised, but not later than four weeks from commencement. Please note that the following are non negotiable for the fulfillment of the project:  
-- you must host a project which covers the MVP;
-- you must provide clear documentation summarising the project and explaining how the project can be ran locally;
-- if you have log in functionality, you must provide a whitelisted test user accounts for us to review your work. You must include these in the README as well for hiring partners and potential employers to be able to access.
+If you complete the MVP and have time for additional features, consider implementing the following:
 
-Omitting these requirements can result in this project being unsuccessful. 
+1. **User Accounts**: Save curated exhibition collections within user profiles. Consider a back-end solution for securely storing data, and provide access to a whitelisted test account.
+2. **Social Media Integration**: Allow users to share exhibitions or individual artworks.
+3. **Cross-Platform Access**: Develop both a website and a mobile app.
+4. **Advanced Search Options**: Enable multiple filters for more refined search criteria.
