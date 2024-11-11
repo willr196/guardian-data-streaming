@@ -28,7 +28,7 @@ The following technologies and tools are **suggestions**, not requirements:
 - **Android** for the frontend.
 - **Kotlin** for a new challenge.
 - **Google Calendar API** for calendar integration.
-- **Spring Security** for authentication.
+- **Google Sign-In** for OAuth social sign in
 
 ## UI Requirements
 
@@ -60,3 +60,4 @@ If you complete the MVP and have time for additional features, consider implemen
 2. **Social Media Integration**: Allow users to share exhibitions or individual artworks.
 3. **Cross-Platform Access**: Develop both a mobile app and website.
 4. **Advanced Search Options**: Enable multiple filters for more refined search criteria.
+5. **Spring Security** implement full authentication using the Spring Security framework for secure communication between the backend API and frontend Android app.

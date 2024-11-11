@@ -22,14 +22,14 @@ See [Completion and Submission Requirements](#completion-and-submission-requirem
 - The platform should be built using **Java** or **Kotlin**.
 - **Event Data**: You can use either a freely available API for event data or create your own event data. Research and decide on which API to use prior to starting. The focus is on building the platform, not on data generation.
 - **Calendar API**: You'll need to sign up for the Google Calendar API (or an equivalent) using a free developer account. This will allow users to add events to their calendars.
-- Implement security best practices for **user authentication and authorisation** (e.g., OAuth login flow, username and password, web tokens)
+- Implement security best practices for **user authentication** using OAuth login flow/username and password (e.g., Google Sign-In, GitHub OAuth)
 
 The following technologies and tools are **suggestions**, not requirements:
 
 - **Android** for the frontend.
 - **Kotlin** for a new challenge.
 - **Google Calendar API** for calendar integration.
-- **Spring Security** for authentication.
+- **Google Sign-In** for OAuth social sign in
 
 ## UI Requirements
 
@@ -61,4 +61,4 @@ If you have time once you have completed the MVP requirements, consider adding t
 2. **Confirmation emails**: Automatically send confirmation emails to users who sign up for an event.
 3. **Social media integration**: Allow users to share events on social platforms.
 4. **Cross-platform**: Build both a mobile app and website.
-5. **Google/Social login**: Allow users to sign up using their Google or social media accounts.
+5. **Spring Security** implement full authentication using the Spring Security framework for secure communication between the backend API and frontend Android app.
