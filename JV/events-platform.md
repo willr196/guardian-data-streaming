@@ -4,7 +4,7 @@
 
 A small community business has reached out to you to create a platform where they can create and share events with members of the community.
 
-You have been taked with building and hosting a platform (either a website or a mobile app) that allows community members to view, sign up for, and add events to their own personal calendars. Staff members should have additional functionality to create and manage events.
+You have been tasked with building and a mobile app that allows community members to view, sign up for, and add events to their own personal calendars. Staff members should have additional functionality to create and manage events.
 
 ## Minimum Viable Product (MVP)
 
@@ -19,25 +19,23 @@ See [Completion and Submission Requirements](#completion-and-submission-requirem
 
 ## Tech Choices:
 
-- The platform should be built using **JavaScript** or **TypeScript**.
+- The platform should be built using **Java** or **Kotlin**.
 - **Event Data**: You can use either a freely available API for event data or create your own event data. Research and decide on which API to use prior to starting. The focus is on building the platform, not on data generation.
 - **Calendar API**: You'll need to sign up for the Google Calendar API (or an equivalent) using a free developer account. This will allow users to add events to their calendars.
-- Implement security best practices for **user authentication**
-- Host the project on a **free platform** (e.g., GitHub Pages for web, Expo for mobile apps).
+- Implement security best practices for **user authentication and authorisation** (e.g., OAuth login flow, username and password, web tokens)
 
 The following technologies and tools are **suggestions**, not requirements:
 
-- **React** or **React Native** for the frontend.
-- **TypeScript** for a new challenge.
+- **Android** for the frontend.
+- **Kotlin** for a new challenge.
 - **Google Calendar API** for calendar integration.
-- **ExpoDev** for hosting a mobile React Native apps - This platform will provide a QR code and URL so your project can be accessed via the ExpoDev app.
+- **Spring Security** for authentication.
 
 ## UI Requirements
 
-- Ensure the design is **responsive** and works well across different screen sizes.
-- **Accessibility** must be considered for users with disabilities (e.g., screen readers, keyboard navigation).
-- The platform should clearly communicate **errors** to the users (e.g., failed requests, missing fields).
-- Loading states should be obvious when content is being fetched.
+- Design should be **responsive** and adapt well across various mobile device screen sizes.
+- Ensure **accessibility** for users with disabilities (e.g., support screen readers, voice navigation).
+- The UI should clearly display **errors** (e.g., failed requests or missing fields) and show loading states when content is being fetched.
 - The user interface should be intuitive, making it easy to find, sign up for, and create events.
 
 ## Completion and Submission Requirements
@@ -46,12 +44,11 @@ The due date will be advised, but it will be no later than four weeks after the 
 
 Your project must meet the following criteria to be considered complete:
 
-1. The project must be **hosted** and publicly accessible (web or mobile).
-2. The README must include:
+1. The project should feature a fully documented backend API application and an Android Studio project for the frontend app.
+2. **README Documentation** should include:
    - A summary of the project
-     - you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.
-   - Test account access details
-   - Clear instructions on how to run the project locally, including any setup steps (e.g., installing dependencies, setting up environment variables).
+     - (you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.)
+   - Clear instructions on how to run the project locally, including setup steps (e.g., installing dependencies, any necessary API keys, database setup, configuring application properties and environment variables).
 3. Meet the [MVP requirements](#minimum-viable-product-mvp) outlined above.
 
 Failure to do this may result in the project being rejected.
@@ -63,5 +60,5 @@ If you have time once you have completed the MVP requirements, consider adding t
 1. **Payment platform integration**: Implement payments via Stripe, Google Pay, etc.
 2. **Confirmation emails**: Automatically send confirmation emails to users who sign up for an event.
 3. **Social media integration**: Allow users to share events on social platforms.
-4. **Cross-platform**: Build both a website and a mobile app.
+4. **Cross-platform**: Build both a mobile app and website.
 5. **Google/Social login**: Allow users to sign up using their Google or social media accounts.
