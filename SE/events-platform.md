@@ -12,7 +12,7 @@ Your platform must fulfill the following functionality:
 
 1. Display a list of events for users to browse.
 2. Allow users to sign up for an event.
-3. Allow users to add events to their Google Calendar after signing up.
+3. Allow users to add events to their Calendar after signing up.
 4. Enable staff members to sign-in to create and manage events.
 
 See [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
