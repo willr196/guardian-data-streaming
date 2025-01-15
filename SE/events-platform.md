@@ -35,7 +35,7 @@ The following technologies and tools are **suggestions**, not requirements:
 
 - Ensure the design is **responsive** and works well across different screen sizes.
 - **Accessibility** must be considered for users with disabilities (e.g., screen readers, keyboard navigation).
-- The platform should clearly communicate **errors** to the users (e.g., failed requests, missing fields).
+- The UI should clearly provide feedback on interactions, and communicate **errors** to the user (e.g., failed requests, missing fields).
 - Loading states should be obvious when content is being fetched.
 - The user interface should be intuitive, making it easy to find, sign up for, and create events.
 
