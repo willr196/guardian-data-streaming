@@ -12,7 +12,7 @@ The platform (web app or progressive web app) must include the following feature
 2. Allow users to browse artworks, from a list view, with "Previous" and "Next" page navigation options to prevent loading of too many items at once.
 3. Users can filter and/or sort artworks to make it easier to navigate through larger lists of items.
 4. Display images and essential details about each artwork individually.
-5. Enable users to add items to and remove items from temporary exhibitions of saved artworks.
+5. Enable users to create, add items to, and remove items from, personal _exhibition collections_ of saved artworks. A single user can have multiple exhibition collections.
 6. Users can view their exhibitions and the saved items within each collection.
 
 Refer to [Completion and Submission Requirements](#completion-and-submission-requirements) for more details.
@@ -21,21 +21,20 @@ Refer to [Completion and Submission Requirements](#completion-and-submission-req
 
 - **Programming Languages**: Use **JavaScript** or **TypeScript**.
 - **API Integration**: Research and choose at least two free museum or university APIs to retrieve collection data. Be sure to sign up for any necessary developer accounts on free tiers.
-- **Hosting**: Use a free distribution platform (e.g., GitHub Pages for web, Expo for mobile apps).
-- Implement **security best practices** (e.g. for storage of API keys).
+- **Hosting**: Use a free distribution platform (e.g., GitHub Pages or Netlify).
+- Implement **security best practices** (e.g. for handling of API keys).
 
 The following technologies and tools are **suggestions**, not requirements:
 
-- **React** or **React Native** for the frontend.
-- **TypeScript** for a new challenge.
-- **Google Calendar API** for calendar integration.
-- **ExpoDev** for hosting a mobile React Native apps - This platform will provide a QR code and URL so your project can be accessed via the ExpoDev app.
+- **React** for the frontend.
+- **TanStack** for managing API calls from the frontend.
+- **TypeScript** Express server.
 
 ## UI Requirements
 
 - Design should be **responsive** and adapt well across various screen sizes.
 - Ensure **accessibility** for users with disabilities (e.g., support screen readers, keyboard navigation).
-- The UI should clearly display **errors** (e.g., failed requests or missing fields) and show loading states when content is being fetched.
+- The UI should clearly provide feedback on interactions, display **errors** (e.g., failed requests or missing fields) and show loading states when content is being fetched.
 - Design should intuitively guide users to search, view, and create curated exhibitions.
 
 ## Completion and Submission Requirements
@@ -44,7 +43,7 @@ The due date will be provided, but it will be no later than four weeks after sta
 
 Your project must fulfill the following criteria:
 
-1. The project should be **hosted** and publicly accessible (web or mobile).
+1. The project should be **hosted** and publicly accessible (from a web browser).
 2. **README Documentation** should include:
    - A summary of the project
      - (you may consider recording a **video walkthrough** of your platform, highlighting key features. Host this video on a free platform (e.g., YouTube) and include a link in your README.)
