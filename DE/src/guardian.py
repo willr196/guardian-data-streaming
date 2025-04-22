@@ -11,13 +11,15 @@ def get_guardian_article(q:str, date_from: Optional[str] = None, api_key: Option
                  "order-by": "newest",
                  "page-size": page_size,
                  "api-key": api_key}
-    
+    if not api_key:
+        raise Exception("API key missing")
+
     if date_from:
         parameters["from-date"] = date_from
 
     resp = requests.get(URL, params=parameters)
     if resp.status_code != 200:
-        raise Exception
+        raise Exception(f"API returned {resp.status_code}: {resp.text}")
     
     data = resp.json()
     results = data["response"]["results"]
@@ -31,7 +33,7 @@ def get_guardian_article(q:str, date_from: Optional[str] = None, api_key: Option
 
     return extracted 
 
-articles = get_guardian_article("cliamte", api_key="")
+articles = get_guardian_article("cliamte", api_key="523c0511-988f-42cb-a5e5-79790a206bd3")
 
 
 for article in articles:
