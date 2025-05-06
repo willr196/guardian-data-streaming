@@ -102,4 +102,3 @@ The app always tries to use AWS Secrets Manager first. If that fails or isn’t 
 
 You only need AWS credentials and an actual SQS queue if you want to send articles to the cloud. Otherwise, everything else can be tested locally.
 
-Let me know if anything is confusing or doesn’t work as expected. This project is mostly for learning, so improvements are always welcome.
